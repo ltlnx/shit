@@ -33,12 +33,6 @@ This repository marks a historic milestone - the one billionth repository create
 - DevOps
 - Security
 
-## 🤝 How to Contribute
-1. Add your congratulatory message in `MESSAGES.md`
-2. Share your GitHub story in `STORIES.md`
-3. Submit interesting GitHub statistics
-4. Help improve our category explorer
-
 ## 🎯 Project Goals
 1. Document this historic milestone
 2. Create a useful GitHub repository explorer
@@ -52,26 +46,12 @@ This repository marks a historic milestone - the one billionth repository create
 - [x] Historical Timeline of GitHub Statistics
 - [x] API Integration for Real-time Updates
 
-## 📊 Visualizations
-Check out our interactive visualizations:
-- [Programming Language Trends](docs/visualizations/language_trends.html)
-- [Topic Popularity](docs/visualizations/topic_popularity.html)
-
-## 🛠️ Development Setup
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Copy `.env.example` to `.env` and add your GitHub token
-4. Run the stats update:
-   ```bash
-   python .github/scripts/updates_stats.py
-   ```
-5. Generate visualizations:
-   ```bash
-   python src/visualizations.py
-   ```
+## github Actions
+- Auto Merge pull requests FOR Messages & Stories
+  - Write PR to share GITHUB Message With Message Label
+  - Write PR to share GITHUB Story With Story Label
+- update Repo stats
+- Updates the PUBLIC_REPOS for Trending
 
 ## 🏆 Contributors Hall of Fame
 *Automatically updated with top contributors*
