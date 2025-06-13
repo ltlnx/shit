@@ -45,12 +45,33 @@ This repository marks a historic milestone - the one billionth repository create
 3. Build a community-driven celebration of open source
 4. Showcase the evolution of GitHub
 
-## 🚀 Upcoming Features
-- [ ] Live GitHub Statistics Dashboard
-- [ ] Interactive Category Explorer
-- [ ] Community Stories Wall
-- [ ] Historical Timeline of GitHub
-- [ ] API Integration for Real-time Updates
+## 🚀 Features
+- [x] Live GitHub Statistics Dashboard with Auto-Updates
+- [x] Interactive Category Explorer with Visualizations
+- [x] Community Stories Wall
+- [x] Historical Timeline of GitHub Statistics
+- [x] API Integration for Real-time Updates
+
+## 📊 Visualizations
+Check out our interactive visualizations:
+- [Programming Language Trends](docs/visualizations/language_trends.html)
+- [Topic Popularity](docs/visualizations/topic_popularity.html)
+
+## 🛠️ Development Setup
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Copy `.env.example` to `.env` and add your GitHub token
+4. Run the stats update:
+   ```bash
+   python .github/scripts/updates_stats.py
+   ```
+5. Generate visualizations:
+   ```bash
+   python src/visualizations.py
+   ```
 
 ## 🏆 Contributors Hall of Fame
 *Automatically updated with top contributors*
