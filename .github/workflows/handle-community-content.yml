@@ -1,0 +1,44 @@
+name: Handle Community Content
+
+on:
+  pull_request:
+    types: [opened, labeled, synchronize]
+    paths:
+      - 'MESSAGES.md'
+      - 'STORIES.md'
+
+jobs:
+  process-content:
+    runs-on: ubuntu-latest
+    if: |
+      contains(github.event.pull_request.labels.*.name, 'message') ||
+      contains(github.event.pull_request.labels.*.name, 'story')
+    
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyGithub>=2.1.1 markdown>=3.4.3
+
+      - name: Validate and Process Content
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: python .github/scripts/process_community_content.py
+
+      - name: Auto-merge if checks pass
+        if: success()
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --auto --merge
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
