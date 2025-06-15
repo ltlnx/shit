@@ -28,6 +28,3 @@ If you have any questions or wish to collaborate, you can reach me directly:
 
 ---
 
-✨ **Consider adding a sponsor button to your repository:**  
-If you'd like, I can create a custom **“Sponsor” button** with your eSewa QR code or bank details.  
-Just let me know! 🌟
