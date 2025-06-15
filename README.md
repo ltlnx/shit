@@ -16,13 +16,7 @@ Thank you for your generosity! 🙏
 
 ---
 
-## QR Code for eSewa
 
-![eSewa QR Code](https://api.qrserver.com/v1/create-qr-code/?data=9845193774&size=250x250)
-
-✅ Scan this QR code with your eSewa app to send your donation directly.  
-
----
 
 ## Contact
 
