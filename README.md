@@ -1,1 +1,39 @@
-# shit
+# Support My Work
+
+![Support](https://img.shields.io/badge/Support-Donations_Welcome-brightgreen)
+
+If you appreciate this repository or want to support me, you can send your donation directly:
+
+✅ **eSewa Number:** 9845193774   
+✅ **Bank Name:** Citizens Bank   
+✅ **Bank Account Number:** 1370100000395045   
+✅ **Account Holder's Name:** Aasish Pokhrel    
+
+Thank you for your generosity! 🙏  
+
+> Please note: This account is for payments or donations only.  
+> Do not share this information elsewhere or for other purposes.
+
+---
+
+## QR Code for eSewa
+
+![eSewa QR Code](https://api.qrserver.com/v1/create-qr-code/?data=9845193774&size=250x250)
+
+✅ Scan this QR code with your eSewa app to send your donation directly.  
+
+---
+
+## Contact
+
+If you have any questions or wish to collaborate, you can reach me directly:
+
+- **Name:** Aasish Pokhrel
+- **Location:** Nepal
+- **Thank you for your kindness and support!**
+
+---
+
+✨ **Consider adding a sponsor button to your repository:**  
+If you'd like, I can create a custom **“Sponsor” button** with your eSewa QR code or bank details.  
+Just let me know! 🌟
